@@ -7,7 +7,7 @@ using Web_api_EF_in_memory.Models.Interfaces;
 
 namespace Web_api_EF_in_memory.Service
 {
-    public class VendaService : IAtualizaVendaInterface
+    public class VendaService : IVendaServiceInterface
     {
         private IAtualizaVendaInterface _status;
 
@@ -24,6 +24,16 @@ namespace Web_api_EF_in_memory.Service
         public void AtualizaStatusVenda()
         {
             _status.AtualizaStatusVenda();
+        }
+
+        public Venda ObterVenda(int codigoVenda)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GravarVenda(Vendedor vendedor, Veiculo ve)
+        {
+            throw new NotImplementedException();
         }
     }
 }
