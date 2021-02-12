@@ -59,20 +59,23 @@ namespace Web_api_EF_in_memory
         {
             var vendaTeste1 = new Venda
             {
-
             };
 
             context.Vendas.Add(vendaTeste1);
 
             var vendedor1 = new Vendedor
             {
+                Codigo = 1,
+                Nome = "Joao",
+                Cpf = "90306862000"
             };
 
             var vendedor2 = new Vendedor
             {
+                Codigo = 2,
+                Nome = "José",
+                Cpf = "14035058025"
             };
-
-
 
             context.Vendedores.Add(vendedor1);
             context.Vendedores.Add(vendedor2);
